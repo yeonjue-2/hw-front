@@ -59,11 +59,7 @@
         </style>
 
         <script>
-             $(document).ready(function(){
-                getFiles();
-             })
-
-             function save() {
+            function save() {
                 var form_data = new FormData($('#upload-file')[0]);
                 $.ajax({
                     type: 'POST',
